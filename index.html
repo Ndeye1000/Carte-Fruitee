@@ -5,37 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        h1 {
-            color: palevioletred;
-        }
-        .conteneur {
-            width: 50%;
-            margin: auto;
-            text-align: center;
-            border: 2px solid palevioletred;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: whitesmoke;
-        }
-        p {
-            margin: 20px 10px;
-            font-size: 18px;
-            color: palevioletred;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: pink;
-            padding: 10%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -43,20 +13,7 @@
         <h1>Achat de fruits</h1>
         <p id="prix"></p>
     </div>
-    <script>
-        const fruits = [
-            { nom: 'Pomme', prix: 300, quantite: 5 },
-            { nom: 'Fraise', prix: 250, quantite: 10 },
-            { nom: 'Cerise', prix: 150, quantite: 20 }
-        ];
-
-        const prixElement = document.getElementById('prix');
-        fruits.forEach(fruit => {
-            const fruitInfo = document.createElement('p');
-            fruitInfo.textContent = `Cette ${fruit.nom} coute ${fruit.prix} FCFA et vous en voulez ${fruit.quantite} donc ca vous fera : ${fruit.prix * fruit.quantite} FCFA.`;
-            prixElement.appendChild(fruitInfo);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
